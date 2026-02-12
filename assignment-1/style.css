@@ -1,1 +1,195 @@
-style
+:root {
+    --primary-color: #64C7D0; /* Teal/Cyan */
+    --primary-dark: #4fade6;
+    --bg-gradient-start: #78e0dc;
+    --bg-gradient-end: #54aac5;
+    --white: #ffffff;
+    --text-color: #333;
+    --border-radius: 12px;
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, var(--bg-gradient-start), var(--bg-gradient-end));
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    color: var(--text-color);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    color: var(--white);
+    text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    max-width: 1000px;
+    margin-bottom: 20px;
+    flex-wrap: wrap; 
+}
+
+.card {
+    background: var(--white);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    padding: 25px;
+    flex: 1;
+    min-width: 300px; /* Responsive behavior */
+}
+
+h2 {
+    color: #6a6afe; /* Periwinkle blue kind of color for headers in cards */
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+/* Input Section Styles */
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: border-color 0.3s;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(100, 199, 208, 0.2);
+}
+
+.btn-primary {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--primary-color); /* Fallback */
+    background: linear-gradient(to right, #64C7D0, #54aac5);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.1s, opacity 0.2s;
+}
+
+.btn-primary:hover {
+    opacity: 0.9;
+}
+
+.btn-primary:active {
+    transform: scale(0.98);
+}
+
+/* Display Section Styles */
+.button-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.btn-secondary {
+    flex: 1;
+    padding: 10px;
+    background-color: var(--primary-color); /* Using same color as primary for consistency with image */
+    color: white;
+    border: none;
+    border-radius: 20px; /* More rounded */
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.btn-secondary:hover {
+    opacity: 1;
+}
+
+.events-list {
+    min-height: 200px;
+}
+
+.empty-state {
+    text-align: center;
+    color: #888;
+    margin-top: 50px;
+    font-style: italic;
+}
+
+.event-item {
+    background: #f9f9f9;
+    border-left: 4px solid var(--primary-color);
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.event-item h3 {
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+}
+
+.event-item .meta {
+    font-size: 0.85rem;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Demo Section */
+.demo-section h2 {
+    color: #6a6afe;
+}
+
+.display-box {
+    background: #fdfdfd;
+    border: 1px solid #eee;
+    padding: 15px;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+#pressedKey {
+    margin-left: 10px;
+    font-weight: bold;
+    color: #333;
+}
