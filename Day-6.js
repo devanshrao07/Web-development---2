@@ -1,4 +1,4 @@
-onst headingelement = document.getElementById
+const headingelement = document.getElementById
 ("myhead");
 console.log(headingelement);
 

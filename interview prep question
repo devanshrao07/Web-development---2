@@ -1,0 +1,32 @@
+1)the  difference between object.freeze and object.seal
+2)what is execution context and how java script code executes in ec
+3)what is call stack
+4) what is the difference between var,let const
+5)expain ifferent types of operation in java script
+6)difference btw "==","==="
+7)what is tdz and hoisting
+8)difference btw dom and html
+9)explain diff arry meathod in js
+ .map vs filter
+ .map,filter,reduce
+ .find vs filter
+10)type of function in js
+  .regular function
+  .arrow function
+  .first class function
+  .higher order function
+  .self invoking function
+  .iiff
+  .anonymous function
+11)map vs foreach
+12)what is need of asyncronus style of code
+13)diff btw settimeout and setinterval
+
+promise is used to handlle asyncronus function in a better way than callback hell
+promise have 3 states
+pending 
+fullfilled
+rejected   
+promise consumern -.then, .catch, 
+if promise is fullfilledthen it goes to .then 
+if promise is rejected then it goes to .catch
